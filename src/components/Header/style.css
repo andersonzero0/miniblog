@@ -1,0 +1,23 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 3px;
+
+    position: sticky;
+    top: 0px;
+    background: #2E3340;
+}
+
+header > img {
+    width: 50px;
+}
+
+header > p {
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+}

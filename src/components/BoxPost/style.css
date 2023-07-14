@@ -1,0 +1,38 @@
+@import '@radix-ui/colors/violet.css';
+
+.boxPost {
+    width: 500px;
+    height: 80px;
+    padding: 8px;
+
+    background-color: white;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:0;
+    border-radius: 5px;
+}
+
+.boxPost:hover {
+    outline: 4px solid var(--violet-11);
+}
+
+.boxPost > div {
+    width: 100%;
+}
+
+.boxName {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+small {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
+}

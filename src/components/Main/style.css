@@ -1,0 +1,10 @@
+main {
+    width: 100%;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 40px;
+}

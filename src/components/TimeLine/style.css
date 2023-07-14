@@ -1,0 +1,35 @@
+.conteinerTimeLine {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.titleTimeLine {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+    position: sticky;
+    top: 60px;
+    z-index: 1000;
+    background-color: #2E3340;
+    width: 100vw;
+    padding: 4px;
+}
+
+.loading {
+    animation: rotate-center 1s linear infinite both;
+  }
+  
+  @keyframes rotate-center {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
