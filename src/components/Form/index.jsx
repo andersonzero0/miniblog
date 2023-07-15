@@ -16,7 +16,7 @@ export default function FormDemo() {
     event.preventDefault();
     const data = Object.fromEntries(new FormData(event.currentTarget));
 
-    axios.post('http://localhost:3000/post', data)
+    axios.post(import.meta.env.VITE_URL_API, data)
     .then(function (response) {
 
       console.log(response);

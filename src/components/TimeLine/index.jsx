@@ -8,7 +8,7 @@ export default function TimeLine() {
 
     function getDataAPI() {
         
-          axios.get('http://localhost:3000/post')
+          axios.get(import.meta.env.VITE_URL_API)
           .then(response => {
             setPosts(response.data);
           })
