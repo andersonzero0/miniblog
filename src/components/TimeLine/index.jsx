@@ -6,18 +6,26 @@ import './style.css';
 
 export default function TimeLine() {
 
+    function getDataAPI() {
+        
+          axios.get('http://localhost:3000/post')
+          .then(response => {
+            setPosts(response.data);
+          })
+          .catch(error => {
+            console.error('Erro ao buscar os posts:', error);
+          });
+    }
+
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
+
+        getDataAPI();
+      
         const intervalo = setInterval(() => {
-          axios.get('http://localhost:3000/post')
-            .then(response => {
-              setPosts(response.data);
-            })
-            .catch(error => {
-              console.error('Erro ao buscar os posts:', error);
-            });
-        }, 10000);
+          getDataAPI();
+        }, 5000);
     
         return () => {
           clearInterval(intervalo);

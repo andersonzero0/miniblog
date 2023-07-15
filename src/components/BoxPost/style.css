@@ -36,3 +36,9 @@ small {
     justify-content: end;
     align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+    .boxPost {
+        width: 95%;
+    }
+}
