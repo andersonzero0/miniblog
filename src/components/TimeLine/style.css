@@ -17,7 +17,7 @@
     top: 60px;
     z-index: 1000;
     background-color: #2E3340;
-    width: 100%;
+    width: 100vw;
     padding: 4px;
 }
 
