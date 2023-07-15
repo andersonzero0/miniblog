@@ -56,7 +56,7 @@ export default function FormDemo() {
         </Form.Message>
       </div>
       <Form.Control asChild>
-        <textarea id='message' className="Textarea" required />
+        <textarea id='message' className="Textarea" required maxlength="100" />
       </Form.Control>
       </Form.Field>
       <Form.Submit asChild>
